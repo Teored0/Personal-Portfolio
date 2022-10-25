@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LED Buttons</title>
+</head>
+<body>
+    <div class="buttons">
+        <form action="\led_r" method="get" class="red">
+            <input type="submit" value="Red" name="red">
+        </form>
+        <form action="\led_y" method="get" class="yellow">
+            <input type="submit" value="Yellow" name="yellow">
+        </form>
+        <form action="\led_b" method="get" class="blue">
+            <input type="submit" value="Blue" name="blue">
+        </form>
+</div>
+<div>
+    <h3>Azione Consigliata: {{ knn }}</h3>
+</div>
+    <div class="table">
+    <a href="/table">
+        Activity Table</a>
+    </div>
+    <div class="logout">
+    <a href="/logout">
+        Logout</a>
+    </div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+ :root{
+    --primary-color:#8cff1a;
+    --bg-color:#050801;
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #050801;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+h3{
+    position: absolute;
+    color: white;
+    top: 200px;
+    right: 650px;
+}
+
+.red input[type="submit"]{
+    border: 1px solid #ea0808;
+    width: 150px;
+    background: none;
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 25px;
+    transition: 0.25s;
+    cursor: pointer;
+    box-shadow: 0 0 0px #ea0808,
+                0 0 15px #ea0808;
+}
+.red input[type="submit"]:hover{
+    width: 150px;
+    background: #ea0808;
+}
+.blue input[type="submit"]{
+    border: 1px solid #1303f3;
+    width: 150px;
+    background: none;
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 25px;
+    transition: 0.25s;
+    cursor: pointer;
+    box-shadow: 0 0 0px #1303f3,
+                0 0 15px #1303f3;
+}
+.blue input[type="submit"]:hover{
+    width: 150px;
+    background: #1303f3;
+}.yellow input[type="submit"]{
+    border: 1px solid #f6ff00;
+    width: 150px;
+    background: none;
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 25px;
+    transition: 0.25s;
+    cursor: pointer;
+    box-shadow: 0 0 0px #f6ff00,
+                0 0 15px #f6ff00;
+}
+.yellow input[type="submit"]:hover{
+    width: 150px;
+    background: #f6ff00;
+}
+
+    a{
+    display: flex;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: var(--primary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+
+}
+
+a:hover{
+    background: var(--primary-color);
+    color: #050801;
+    box-shadow: 0 0 5px var(--primary-color),
+                0 0 25px var(--primary-color),
+                0 0 50px var(--primary-color),
+                0 0 100px var(--primary-color);
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+.logout {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+}
+.table{
+    position: absolute;
+    top: 0px;
+    right: 200px;
+}
+</style>
+</body>
+</html>

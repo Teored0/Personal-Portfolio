@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+<div class="login">
+    <form action="/getlogin" method="post" class="box">
+        <h1 data-text="Login">Login</h1>
+        <input type="email" name="user" placeholder="Email" required>
+        <input type="password" name="pwd" placeholder="Password" required>
+        <input type="submit" value="Login">
+    </form>
+</div>
+</body>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+:root{
+    --primary-color:#ff80ff;
+    --bg-color:#050801;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: block;
+    align-items: center;
+    background: var(--bg-color);
+}
+.login{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: block;
+    align-items: center;
+    background: var(--bg-color);
+}
+
+.login:before{
+    content: ' ';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -1;
+}
+.login:after{
+    content: ' ';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -2;
+    filter: blur(40px);
+}
+.login:before,
+.login:after{
+    background: var(--primary-color);
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-size: 3em;
+    text-shadow: 0 0 2px var(--primary-color);
+    position: relative;
+    letter-spacing: 8px;
+}
+.box h1:after{
+    content: attr(data-text);
+    top: 0;
+    left: 0;
+    padding: 0 60px;
+    position: absolute;
+    z-index: -1;
+    color: var(--primary-color);
+    filter: blur(15px);
+}
+.box h1:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    z-index: -2;
+    opacity: .5;
+    filter: blur(70px);
+}
+.box input[type="text"],.box input[type="password"],.box input[type="email"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.25s;
+    box-shadow: 0 0 0px var(--primary-color),
+                0 0 10px var(--primary-color);
+}
+.box input[type="text"]:focus,.box input[type="password"]:focus,.box input[type="email"]:focus{
+    box-shadow: 0 0 0px var(--primary-color),
+                0 0 10px var(--primary-color);
+    width: 230px;
+}
+
+.box input[type="submit"]{
+    border: 1px solid var(--primary-color);
+    background: none;
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 25px;
+    transition: 0.25s;
+    cursor: pointer;
+    box-shadow: 0 0 0px var(--primary-color),
+                0 0 15px var(--primary-color);
+}
+.box input[type="submit"]:hover{
+    width: 150px;
+    background: var(--primary-color);
+}
+
+</style>
+</html>
