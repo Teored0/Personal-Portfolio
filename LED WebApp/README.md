@@ -2,7 +2,7 @@
 
 I have created a web-app that allows, if started by a raspberry, a registered user to control the switching on and off of some LEDs thanks to a graphic interface.
 In the code, the commands of the GPIO library, therefore the one to make the raspberry execute the commands, are commented. Keeping those commands commented, the application writes only to the HOSTED LOCATED DATABASE, thus simulating the operation of the whole program
-##### 1. HOMEPAGE:
+#### 1. HOMEPAGE:
 On the homepage, you can register if you are a new user or log in if the user has already registered in the past.
 Registration requires name, surname, gender, city of residence, email and password, the latters will be used as login credentials.
 All this information will be saved on a MySQL database, therefore relational.
@@ -13,7 +13,7 @@ For the login of an already registered user, the program compares the email and 
 <img src=https://user-images.githubusercontent.com/102221403/199808486-19aef4c7-0f62-4d6c-8fc6-4b828b09ea11.png width="500" height="500">
 
 
-##### 2. PAGE LED:
+#### 2. PAGE LED:
 This is the page that a user can access after being authenticated, in this page there will be the representation of the 3 LEDs to be turned on or off in the form of buttons, a button to see the table of all the actions done by that user and a logout button.
 The 3 LEDs connected to the raspberry can only light up one at a time so for example if the red LED is on and the user clicks on the button to turn on the blue, the program will first turn off the red and then turn on the blue.
 The actions performed by the user such as login and logout and the switching on and off of the buttons are all saved on the database with an id and the day and time in which they were performed.
@@ -25,7 +25,7 @@ To log out I made use of the flask sessions together with the user id, and to lo
 ![image](https://user-images.githubusercontent.com/102221403/199809111-410104f1-75b9-4aa6-87e7-c561b8b0d48b.png)
 
 
-##### 3. KNN:
+#### 3. KNN:
 I implemented a KNN from scratch, so without using libraries and using only python lists and dictionaries, therefore without numpy or pandas, this is because such large libraries would be too heavy for the raspberry.
 For the implementation, I select, through a query, the date and time of the action and the LED on of the current user, then I omit all the fields of the login and logout database and the LED off (e.g. red off).
 From these data I get, I calculate the timestamp of each date, which would be the number of seconds elapsed from 01/01/1970 to the date where that particular action was performed, and I put it in the list of x then I transform the name of the various LEDs in numbers (red = 0, yellow = 1, etc ..). To predict the LED that the user would like to turn on, I take the current timestamp and use it as x_test, then I calculate a sort of manhattan distance, which is actually a simple subtraction between integers, between the current timestamp and the one contained in the database. Thus obtaining another list, which will then be sorted from the smallest to the largest and from this one will then derive the mode of the labels or the predicted value.
