@@ -8,9 +8,9 @@ Registration requires name, surname, gender, city of residence, email and passwo
 All this information will be saved on a MySQL database, therefore relational.
 The passwords are saved in clear text but I should have saved them in the database encrypted with an algorithm (eg. md5), during the registration phase it will also be checked if the same email with the same password is already registered.
 For the login of an already registered user, the program compares the email and password entered by the user with those present in the database, if it finds a match then it allows the user to access, otherwise an operation failed screen appears from which you can return to the homepage
-![image](https://user-images.githubusercontent.com/102221403/199808262-3932a792-2627-4dbc-94be-03c25dbd851a.png)
-![image](https://user-images.githubusercontent.com/102221403/199808463-eb89d34b-8ef8-497b-bbe7-763a25cf0fed.png) 
-![image](https://user-images.githubusercontent.com/102221403/199808486-19aef4c7-0f62-4d6c-8fc6-4b828b09ea11.png)
+<img src=https://user-images.githubusercontent.com/102221403/199808262-3932a792-2627-4dbc-94be-03c25dbd851a.png>
+<img src=https://user-images.githubusercontent.com/102221403/199808463-eb89d34b-8ef8-497b-bbe7-763a25cf0fed.png width="500" height="500">
+<img src=(https://user-images.githubusercontent.com/102221403/199808486-19aef4c7-0f62-4d6c-8fc6-4b828b09ea11.png width="500" height="500">
 
 
 ##### 2. PAGE LED:
