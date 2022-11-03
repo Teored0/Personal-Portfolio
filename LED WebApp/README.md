@@ -8,6 +8,8 @@ Registration requires name, surname, gender, city of residence, email and passwo
 All this information will be saved on a MySQL database, therefore relational.
 The passwords are saved in clear text but I should have saved them in the database encrypted with an algorithm (eg. md5), during the registration phase it will also be checked if the same email with the same password is already registered.
 For the login of an already registered user, the program compares the email and password entered by the user with those present in the database, if it finds a match then it allows the user to access, otherwise an operation failed screen appears from which you can return to the homepage
+![image](https://user-images.githubusercontent.com/102221403/199808262-3932a792-2627-4dbc-94be-03c25dbd851a.png)
+
 ##### 2. PAGE LED:
 This is the page that a user can access after being authenticated, in this page there will be the representation of the 3 LEDs to be turned on or off in the form of buttons, a button to see the table of all the actions done by that user and a logout button.
 The 3 LEDs connected to the raspberry can only light up one at a time so for example if the red LED is on and the user clicks on the button to turn on the blue, the program will first turn off the red and then turn on the blue.
