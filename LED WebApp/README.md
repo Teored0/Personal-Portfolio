@@ -21,6 +21,8 @@ Thanks to this it was possible to implement a Machine Learning algorithm specifi
 To view the table of activities for each user, the application make a
 query where it selects all the fields of the activities table and sorts it by id in descending order.
 To log out I made use of the flask sessions together with the user id, and to log out I use the pop command together with the user id so that it removes it from the session and then the application returns to the homepage.
+![image](https://user-images.githubusercontent.com/102221403/199808958-8c2e0b00-fd57-4559-9069-d1a10a97f245.png)
+
 ##### 3. KNN:
 I implemented a KNN from scratch, so without using libraries and using only python lists and dictionaries, therefore without numpy or pandas, this is because such large libraries would be too heavy for the raspberry.
 For the implementation, I select, through a query, the date and time of the action and the LED on of the current user, then I omit all the fields of the login and logout database and the LED off (e.g. red off).
