@@ -22,6 +22,8 @@ To view the table of activities for each user, the application make a
 query where it selects all the fields of the activities table and sorts it by id in descending order.
 To log out I made use of the flask sessions together with the user id, and to log out I use the pop command together with the user id so that it removes it from the session and then the application returns to the homepage.
 ![image](https://user-images.githubusercontent.com/102221403/199808958-8c2e0b00-fd57-4559-9069-d1a10a97f245.png)
+![image](https://user-images.githubusercontent.com/102221403/199809111-410104f1-75b9-4aa6-87e7-c561b8b0d48b.png)
+
 
 ##### 3. KNN:
 I implemented a KNN from scratch, so without using libraries and using only python lists and dictionaries, therefore without numpy or pandas, this is because such large libraries would be too heavy for the raspberry.
