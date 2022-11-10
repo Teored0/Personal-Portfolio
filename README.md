@@ -12,11 +12,14 @@
 ## Pyspark Projects:
 - [Pyspark with Machine Learning](https://github.com/Teored0/Personal-Portfolio/tree/main/PySpark%20Machine%20Learning)
 
+## Database NoSQL Projects:
+
+
 <!--
 PYSPARK
 - [Basics]()
 - [Streaming]()
-## Database NoSQL Projects:
+Database NoSQL Projects
 - [Redis]()
 - [MongoDB]()
 -->
