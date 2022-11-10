@@ -15,10 +15,7 @@ Obtaining a score of 97.98 and a percentage of 1 equal to 36.84%.
 Submitting the results to Kaggle, I got a 75% score.
 
 
-
-{::comment}
-
--------------------------------------------------------------------
+<!---
 
 Titanic Kaggle challenge
 
@@ -35,4 +32,4 @@ Grazie a tutto questo, ho individuato la Random Forest con lo score migliore e l
 Ottenendo uno score di 97.98 e una percentuale di 1 uguale a 36.84 %.
 
 Inviando i risultati a kaggle, ho ottenuto uno score del 75%.
-{:/comment}
+--->
