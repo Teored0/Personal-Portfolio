@@ -10,7 +10,7 @@
 - [LED WebApp](https://github.com/Teored0/Personal-Portfolio/tree/main/LED%20WebApp)
 
 ## Pyspark Projects:
-- [Pyspark with Machine Learning]()
+- [Pyspark with Machine Learning](https://github.com/Teored0/Personal-Portfolio/tree/main/PySpark%20Machine%20Learning)
 
 <!--
 PYSPARK
