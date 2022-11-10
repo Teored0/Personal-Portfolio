@@ -43,13 +43,7 @@ if __name__ == '__main__':
             "Passenger_Id": df.pop("PassengerId")
         })
 
-    # print("*" * 20 + " Train Info " + "*" * 20)
-    # print(train)
-    # print(train.info())
-    # print("*" * 20 + " Test Info " + "*" * 20)
-    # print(test)
-    # print(test.info())
-
+        
     # define x_train, x_test and y_train
     y_train = train.pop("Survived").to_numpy()
     x_train = train.to_numpy()
@@ -85,8 +79,6 @@ if __name__ == '__main__':
         # print("TRAIN:", train_index, "TEST:", test_index)
         xx_train, xx_test = x_train[train_index], x_train[test_index]
         yy_train, yy_test = y_train[train_index], y_train[test_index]
-        # print(f"Train percentage of 1's: {(np.count_nonzero(yy_test) / len(yy_test)) * 100:.2f} %")
-        # print(yy_test)
 
         for clf in models:
             clf.fit(xx_train, yy_train)
@@ -95,19 +87,9 @@ if __name__ == '__main__':
             score = round(clf.score(xx_test, yy_test) * 100, 2)
             accuracies[str(clf)].append(np.mean(yy_test == yy_pred))
             ones[str(clf)].append((np.count_nonzero(yy_pred) / len(x_test)))
-            # print(scores)
-            # print(f"{clf} Cross Validation Score: {np.mean(scores) * 100:.2f} %")
-            # print(f"{clf} Score: {score}")
-            # print(f"{clf} y pred: {y_pred}")
-            # print(f"{clf} Accuracy: {np.mean(yy_test == yy_pred) * 100:.2f} %")
-            # print(f"{clf} Test percentage of 1's: {(np.count_nonzero(yy_pred) / len(x_test)) * 100:.2f} %")
-            # print(yy_pred)
-
-        # print("*" * 100)
-
+            
     final_accuracy = {}
     for model_accuracy in accuracies:
-        # final_accuracy[model_accuracy] = np.mean(accuracies[model_accuracy])
         print(f"{model_accuracy} Final Accuracy: {np.mean(accuracies[model_accuracy]) * 100:.2f} %")
         print(f"{model_accuracy} Final Ones Rate: {np.mean(ones[model_accuracy]) * 100:.2f} %")
 
