@@ -10,10 +10,13 @@
 - [LED WebApp](https://github.com/Teored0/Personal-Portfolio/tree/main/LED%20WebApp)
 
 ## Pyspark Projects:
+- [Pyspark with Machine Learning]()
+
+<!--
+PYSPARK
 - [Basics]()
 - [Streaming]()
-- [ML]()
-
 ## Database NoSQL Projects:
 - [Redis]()
 - [MongoDB]()
+-->
