@@ -9,15 +9,16 @@
 ## Python Projects:
 - [LED WebApp](https://github.com/Teored0/Personal-Portfolio/tree/main/LED%20WebApp)
 
-## Pyspark Projects:
-- [Pyspark with Machine Learning](https://github.com/Teored0/Personal-Portfolio/tree/main/PySpark%20Machine%20Learning)
+## PySpark Projects:
+- [PySpark Basics: SQL Engine]()
+- [PySpark with Machine Learning](https://github.com/Teored0/Personal-Portfolio/tree/main/PySpark%20Machine%20Learning)
 
 ## Database NoSQL Projects:
 
 
 <!--
 PYSPARK
-- [Basics]()
+
 - [Streaming]()
 Database NoSQL Projects
 - [Redis]()
