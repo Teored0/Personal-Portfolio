@@ -10,8 +10,8 @@
 - [LED WebApp](https://github.com/Teored0/Personal-Portfolio/tree/main/LED%20WebApp)
 
 ## PySpark Projects:
-- [PySpark Basics: SQL Engine]()
-- [PySpark with Machine Learning](https://github.com/Teored0/Personal-Portfolio/tree/main/PySpark%20Machine%20Learning)
+- [PySpark Basics: SQL Engine](https://github.com/Teored0/Personal-Portfolio/tree/main/PySpark%20SQL%20Engine)
+- [PySpark Machine Learning](https://github.com/Teored0/Personal-Portfolio/tree/main/PySpark%20Machine%20Learning)
 
 ## Database NoSQL Projects:
 
