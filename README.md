@@ -15,7 +15,7 @@
 - PySpark Streaming
 
 ## Database NoSQL Projects:
-Redis
+-Redis
 
 <!--
 PYSPARK
