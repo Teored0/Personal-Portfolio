@@ -12,9 +12,10 @@
 ## PySpark Projects:
 - [PySpark Basics: SQL Engine](https://github.com/Teored0/Personal-Portfolio/tree/main/PySpark%20SQL%20Engine)
 - [PySpark Machine Learning](https://github.com/Teored0/Personal-Portfolio/tree/main/PySpark%20Machine%20Learning)
+- PySpark Streaming
 
 ## Database NoSQL Projects:
-
+Redis
 
 <!--
 PYSPARK
