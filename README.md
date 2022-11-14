@@ -16,6 +16,7 @@
 
 ## Database NoSQL Projects:
 - Redis
+- MongoDB
 
 <!--
 PYSPARK
